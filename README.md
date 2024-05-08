@@ -33,6 +33,10 @@ Follow these steps to install the Chechen Latin Keyboard on your macOS system:
 3. **Install the Keyboard Layout:**
    - From the opened window, drag and drop the `Chechen Latin Keyboard` into the `Keyboard Layouts` folder.
 
+<p align="center">
+   <img src="https://i.imgur.com/LC6l4nU.png" alt="Install Keyboard Layout"/>
+</p>
+
 ## Activating the New Layout
 
 ### Log Out & Log In
