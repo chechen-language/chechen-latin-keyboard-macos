@@ -1,0 +1,34 @@
+name: Build and Release DMG
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Check latest tag
+        run: git describe --tags `git rev-list --tags --max-count=1`
+      
+      - name: Install create-dmg
+        run: brew install create-dmg
+
+      - name: Set up permissions
+        run: chmod +x ./build-dmg.sh
+
+      - name: Run build script
+        run: ./build-dmg.sh
+
+      - name: Upload DMG to GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: build/release/Chechen-Keyboard-Installer.dmg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
