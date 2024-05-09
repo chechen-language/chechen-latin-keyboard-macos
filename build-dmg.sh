@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 # Define variables
-installer_dmg_path="build/release/Chechen-Keyboard-Installer.dmg"
+version=$1  # Get version from the first script argument
+installer_dmg_path="build/release/Chechen-Keyboard-Installer-$version.dmg"
 dmg_contents_path="build/DMGContents"
 dmg_background_file="build/dmg-background.png"
 bundle_file="Chechen Latin Keyboard.bundle"

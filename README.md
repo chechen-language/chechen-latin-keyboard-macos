@@ -7,17 +7,17 @@ This layout supports the following configurations:
 
 - **Default (no modifier keys pressed):**
 <p align="center">
-   <img src="https://i.imgur.com/HcODjGv.png" alt="Chechen Latin Layout - QWERTY Default"/>
+   <img src="https://i.imgur.com/BzQQONt.png" alt="Chechen Latin Layout - QWERTY Default"/>
 </p>
 
 - **With `⌥` (Option) key pressed:**
 <p align="center">
-   <img src="https://i.imgur.com/Ml48OxR.png" alt="Chechen Latin Layout - QWERTY with Option"/>
+   <img src="https://i.imgur.com/ST9VkKC.png" alt="Chechen Latin Layout - QWERTY with Option"/>
 </p>
 
 - **With `⌥` (Option) and `⇧` (Shift) keys pressed:**
 <p align="center">
-   <img src="https://i.imgur.com/zMVq90T.png" alt="Chechen Latin Layout - QWERTY with Option and Shift"/>
+   <img src="https://i.imgur.com/arbUw2v.png" alt="Chechen Latin Layout - QWERTY with Option and Shift"/>
 </p>
 
 

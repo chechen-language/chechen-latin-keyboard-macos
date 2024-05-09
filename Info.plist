@@ -7,7 +7,7 @@
 	<key>CFBundleName</key>
 	<string>Chechen Latin Keyboard</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.0</string>
+	<string>1.0.1</string>
 	<key>KLInfo_Chechen (Latin, QWERTY, US)</key>
 	<dict>
 		<key>TICapsLockLanguageSwitchCapable</key>

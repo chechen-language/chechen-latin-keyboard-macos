@@ -12,21 +12,22 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Check latest tag
-        run: git describe --tags `git rev-list --tags --max-count=1`
-      
       - name: Install create-dmg
         run: brew install create-dmg
 
       - name: Set up permissions
         run: chmod +x ./build-dmg.sh
 
-      - name: Run build script
-        run: ./build-dmg.sh
+      - name: Print tag name
+        run: |
+          echo "Tag name from github.ref_name: ${{ github.ref_name }}"
+
+      - name: Run build script with tag
+        run: ./build-dmg.sh ${{ github.ref_name }}
 
       - name: Upload DMG to GitHub Release
         uses: softprops/action-gh-release@v1
         with:
-          files: build/release/Chechen-Keyboard-Installer.dmg
+          files: build/release/Chechen-Keyboard-Installer-${{ github.ref_name }}.dmg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
