@@ -17,7 +17,7 @@ cp Info.plist "${dmg_contents_path}/${bundle_file}/Contents/"
 cp version.plist "${dmg_contents_path}/${bundle_file}/Contents/"
 
 # Create a symlink to the Keyboard Layouts directory in the DMGContents directory
-ln -s "/Library/Keyboard Layouts" "${dmg_contents_path}/Keyboard Layouts"
+ln -s "$HOME/Library/Keyboard Layouts" "${dmg_contents_path}/Keyboard Layouts"
 
 # Command to create the DMG
 create-dmg \
